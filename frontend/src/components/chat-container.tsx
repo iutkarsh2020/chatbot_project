@@ -72,19 +72,20 @@ export function ChatContainer() {
   }
 
   return (
-    <Card className="flex h-[600px] w-full max-w-3xl flex-col overflow-hidden">
-      <ChatHeader />
-      <ChatMessages
-        messages={messages}
-        selectedMessageIds={selectedMessageIds}
-        onToggleSelection={toggleMessageSelection}
-      />
-      <ChatInput
-        messages={messages}
-        selectedMessageIds={selectedMessageIds}
-        onSendMessage={handleSendMessage}
-        onClearSelection={clearSelection}
-      />
-    </Card>
+        <Card className="flex h-[80vh] w-full max-w-3xl flex-col overflow-hidden">
+        <ChatHeader />
+        <ChatMessages
+            messages={messages}
+            selectedMessageIds={selectedMessageIds}
+            onToggleSelection={toggleMessageSelection}
+        />
+        <ChatInput
+            messages={messages}
+            selectedMessageIds={selectedMessageIds}
+            onSendMessage={handleSendMessage}
+            onClearSelection={clearSelection}
+        />
+        </Card>
+    
   )
 }

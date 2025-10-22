@@ -8,7 +8,11 @@ function App() {
 
   return (
     <>
-      <ChatContainer />
+      <div className="bg-red-100">
+        hi
+        <ChatContainer />
+      </div>
+      
     </>
   )
 }
