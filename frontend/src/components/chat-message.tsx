@@ -1,5 +1,5 @@
 import type { Message } from "./chat-container"
-import { cn } from "@/lib/utils"
+import { cn } from "../lib/utils"
 import { Bot, User, Check } from "lucide-react"
 
 interface ChatMessageProps {
