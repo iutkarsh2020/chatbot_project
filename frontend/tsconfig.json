@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    // ... existing options
+    
+    "baseUrl": ".", // Tells TypeScript to look relative to the project root
+    "paths": {
+      "@/*": ["./src/*"] // Maps the '@/...' alias to the 'src' directory
+    },
+
+    // ... existing options
+  },
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}
